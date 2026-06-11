@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Salazar Mercé | Portafolio Profesional</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Sitio web personal y portafolio profesional de Laura Salazar Mercé. Especialista en gestión administrativa, cumplimiento normativo, ensayos clínicos y transformación digital.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans selection:bg-blue-500/30 selection:text-blue-200">
+
+    <!-- 1. BARRA DE NAVEGACIÓN (Navbar) -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#inicio" class="text-xl sm:text-2xl font-outfit font-extrabold tracking-wider bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent hover:opacity-85 transition-opacity">
+                        LAURA SALAZAR
+                    </a>
+                </div>
+                
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="nav-link text-sm font-medium tracking-wide text-blue-500 nav-link-active transition duration-300">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link text-sm font-medium tracking-wide text-slate-300 hover:text-blue-400 transition duration-300">Sobre Mí</a>
+                    <a href="#curriculum" class="nav-link text-sm font-medium tracking-wide text-slate-300 hover:text-blue-400 transition duration-300">Trayectoria</a>
+                    <a href="#proyectos" class="nav-link text-sm font-medium tracking-wide text-slate-300 hover:text-blue-400 transition duration-300">Proyectos</a>
+                    <a href="#contacto" class="nav-link text-sm font-medium tracking-wide text-slate-300 hover:text-blue-400 transition duration-300">Contacto</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" aria-label="Abrir menú" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-lg bg-slate-800/50 border border-slate-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-nav-link block text-base font-medium text-blue-500 py-2">Inicio</a>
+            <a href="#sobre-mi" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-blue-400 py-2">Sobre Mí</a>
+            <a href="#curriculum" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-blue-400 py-2">Trayectoria</a>
+            <a href="#proyectos" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-blue-400 py-2">Proyectos</a>
+            <a href="#contacto" class="mobile-nav-link block text-base font-medium text-slate-300 hover:text-blue-400 py-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN HERO (Inicio) -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <!-- Background Gradient Circles for Premium Look -->
+        <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <!-- Text Area (Column 1) -->
+                <div class="lg:col-span-7 text-center lg:text-left reveal">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-500/10 border border-blue-500/30 text-blue-400 mb-6 tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                        Gestión & Transformación Digital
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-outfit font-extrabold tracking-tight text-white mb-6">
+                        Hola, soy <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">Laura Salazar</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-medium text-slate-200 mb-6 max-w-2xl leading-relaxed">
+                        Especialista en entornos altamente regulados, cumplimiento normativo y procesos digitales orientados a la eficiencia.
+                    </p>
+                    
+                    <!-- Quote Box -->
+                    <div class="relative border-l-4 border-emerald-500 pl-6 py-2 my-8 bg-slate-800/40 rounded-r-lg max-w-xl text-left mx-auto lg:mx-0">
+                        <p class="text-slate-300 italic text-base leading-relaxed">
+                            "Creo que innovar no siempre significa inventar algo nuevo; a menudo consiste en observar con atención, cuestionar con respeto y atreverse a mejorar lo que ya existe."
+                        </p>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#proyectos" class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-95 transition-all duration-200">
+                            Ver mis proyectos
+                            <i data-lucide="arrow-down" class="ml-2 w-4 h-4"></i>
+                        </a>
+                        <a href="#curriculum" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-700 text-base font-semibold rounded-xl text-slate-300 bg-slate-800/80 hover:bg-slate-800 hover:text-white hover:border-slate-500 active:scale-95 transition-all duration-200">
+                            Ver trayectoria
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image (Column 2) -->
+                <div class="lg:col-span-5 flex justify-center reveal">
+                    <div class="relative group">
+                        <!-- Neon ambient glow backplate -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-slate-900 bg-slate-800 flex items-center justify-center shadow-2xl">
+                            <!-- Image path encoded space for absolute safety -->
+                            <img src="Imágenes/Imagen%20CV%20Foto%20Laura.png" alt="Foto Laura Salazar" class="w-full h-full object-cover object-center scale-105 group-hover:scale-110 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="py-20 bg-slate-900/50 relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl sm:text-4xl font-outfit font-bold tracking-tight text-white mb-4">Sobre Mí</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-400">Mi enfoque es la mejora continua, el rigor analítico y la adaptación constante ante retos multidisciplinares.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start reveal">
+                <!-- Description -->
+                <div class="space-y-6 text-slate-300 text-lg leading-relaxed">
+                    <p>
+                        Profesional con una sólida trayectoria en **gestión administrativa, cumplimiento normativo e investigación** en entornos regulados. A lo largo de mi carrera, he liderado y coordinado procesos complejos, licitaciones públicas y expedientes técnicos con la máxima calidad y trazabilidad.
+                    </p>
+                    <p>
+                        Mi experiencia profesional en la administración pública y en el sector de la salud me ha enseñado que los procedimientos existen por una razón, pero también que **pueden y deben simplificarse** para aportar más valor a las personas y las organizaciones.
+                    </p>
+                    <p>
+                        Creo firmemente en la ética, la legalidad y el cuestionamiento constructivo. No acepto automáticamente el *"siempre se ha hecho así"* como respuesta válida; busco identificar ineficiencias, gestionar riesgos y plantear soluciones digitales modernas con sentido común y rigor científico.
+                    </p>
+                </div>
+
+                <!-- Key Values / Value Prop -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800/80 hover:border-slate-700 transition duration-300">
+                        <div class="text-blue-400 mb-4"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
+                        <h3 class="text-white font-semibold mb-2">Rigor y Responsabilidad</h3>
+                        <p class="text-sm text-slate-400">Años de experiencia en entornos estrictamente regulados, asegurando el cumplimiento legal.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800/80 hover:border-slate-700 transition duration-300">
+                        <div class="text-emerald-400 mb-4"><i data-lucide="zap" class="w-8 h-8"></i></div>
+                        <h3 class="text-white font-semibold mb-2">Visión Transversal</h3>
+                        <p class="text-sm text-slate-400">Conectando la administración pública, la salud, el análisis de datos y la tecnología.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800/80 hover:border-slate-700 transition duration-300">
+                        <div class="text-indigo-400 mb-4"><i data-lucide="brain-circuit" class="w-8 h-8"></i></div>
+                        <h3 class="text-white font-semibold mb-2">Pensamiento Crítico</h3>
+                        <p class="text-sm text-slate-400">Análisis y rediseño de procesos desde diferentes perspectivas para optimizar resultados.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800/80 hover:border-slate-700 transition duration-300">
+                        <div class="text-pink-400 mb-4"><i data-lucide="sparkles" class="w-8 h-8"></i></div>
+                        <h3 class="text-white font-semibold mb-2">Mejora Continua</h3>
+                        <p class="text-sm text-slate-400">Actualización y digitalización constante, adoptando herramientas No-Code e Inteligencia Artificial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Habilidades (Skills) -->
+            <div class="mt-20 reveal">
+                <h3 class="text-2xl font-outfit font-bold text-center text-white mb-10">Competencias & Especializaciones</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Column 1: Gestión y Normativa -->
+                    <div class="p-6 rounded-2xl bg-slate-800/30 border border-slate-800/85">
+                        <h4 class="text-white font-bold text-base mb-4 pb-2 border-b border-slate-800 flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-5 h-5 text-blue-400"></i>
+                            Gestión & Normativa
+                        </h4>
+                        <ul class="space-y-2.5 text-sm text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Gestión documental compleja</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Contratación Pública</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Redacción y control de pliegos</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>Responsabilidad Patrimonial</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Digitalización e IA -->
+                    <div class="p-6 rounded-2xl bg-slate-800/30 border border-slate-800/85">
+                        <h4 class="text-white font-bold text-base mb-4 pb-2 border-b border-slate-800 flex items-center gap-2">
+                            <i data-lucide="cpu" class="w-5 h-5 text-emerald-400"></i>
+                            Tecnología & IA
+                        </h4>
+                        <ul class="space-y-2.5 text-sm text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>IA & Herramientas No-Code</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>Excel Avanzado / Pro</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>ERP SAP & Ofimática</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>Gestiona & Abucasis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Proyectos & Investigación -->
+                    <div class="p-6 rounded-2xl bg-slate-800/30 border border-slate-800/85">
+                        <h4 class="text-white font-bold text-base mb-4 pb-2 border-b border-slate-800 flex items-center gap-2">
+                            <i data-lucide="beaker" class="w-5 h-5 text-indigo-400"></i>
+                            Proyectos & Ciencia
+                        </h4>
+                        <ul class="space-y-2.5 text-sm text-slate-400">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span>Monitorización Ensayos Clínicos</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span>Estadística con SPSS</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span>Justificación de Subvenciones</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span>Procedimientos de Trabajo (PNT)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Idiomas -->
+                    <div class="p-6 rounded-2xl bg-slate-800/30 border border-slate-800/85">
+                        <h4 class="text-white font-bold text-base mb-4 pb-2 border-b border-slate-800 flex items-center gap-2">
+                            <i data-lucide="languages" class="w-5 h-5 text-pink-400"></i>
+                            Idiomas
+                        </h4>
+                        <ul class="space-y-2.5 text-sm text-slate-400">
+                            <li class="flex items-center justify-between"><span>Valenciano/Catalán</span> <span class="text-xs px-2 py-0.5 rounded bg-pink-500/10 text-pink-400 font-semibold">C1 / Bilingüe</span></li>
+                            <li class="flex items-center justify-between"><span>Inglés</span> <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-300">B1 - Intermedio</span></li>
+                            <li class="flex items-center justify-between"><span>Ruso</span> <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-300">B1 - Elemental</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN TRAYECTORIA (Currículum) -->
+    <section id="curriculum" class="py-20 relative border-t border-slate-800">
+        <div class="absolute top-1/3 right-1/10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl sm:text-4xl font-outfit font-bold tracking-tight text-white mb-4">Currículum</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-400">Una línea de tiempo estructurada que detalla mi formación académica y mi experiencia laboral en entornos multidisciplinares.</p>
+                
+                <!-- PDF Download Button -->
+                <div class="mt-8">
+                    <a href="CV/SALAZAR_MERCE,Laura.pdf" download="Laura_Salazar_Merce_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold rounded-xl active:scale-95 shadow-lg shadow-indigo-500/15 transition-all duration-200">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        Descargar Currículum en PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Left Column: Experiencia Laboral -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-outfit font-bold text-white mb-8 flex items-center gap-3">
+                        <i data-lucide="briefcase" class="text-blue-400 w-6 h-6"></i>
+                        Experiencia Profesional
+                    </h3>
+                    
+                    <div class="relative border-l-2 border-slate-800 pl-6 space-y-10">
+                        
+                        <!-- Timeline Item 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">2010 - 2025</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Área Administrativa & Gestión Pública</h4>
+                            <p class="text-sm text-slate-400 font-semibold mb-3">Ayuntamiento de Burriana, Colegio Oficial de Arquitectos de Castellón, outcomes 10, etc.</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Gestión y archivo documental en administraciones y entidades profesionales. Apoyo directo en licitaciones y contratación pública, responsabilidad patrimonial, contabilidad pública y control de expedientes con trazabilidad absoluta.
+                            </p>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">11/2021 – 02/2022</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Técnica en Gestión de Proyectos</h4>
+                            <p class="text-sm text-indigo-400 font-semibold mb-3">Cáritas</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Análisis de convocatorias públicas, gestión de pliegos y subvenciones, control de nóminas y justificación económica/técnica integral de subvenciones ante la administración.
+                            </p>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">11/2013 – 07/2021</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Asistenta de Investigación</h4>
+                            <p class="text-sm text-emerald-400 font-semibold mb-3">Outcomes 10</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Coordinación documental para el inicio de estudios clínicos observacionales, contacto y convenios con centros hospitalarios, análisis estadístico de datos médicos con SPSS, y redacción de procedimientos normalizados de trabajo (PNT).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Educación & Formación -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-outfit font-bold text-white mb-8 flex items-center gap-3">
+                        <i data-lucide="graduation-cap" class="text-emerald-400 w-7 h-7"></i>
+                        Educación & Especialización
+                    </h3>
+                    
+                    <div class="relative border-l-2 border-slate-800 pl-6 space-y-10">
+                        
+                        <!-- Education Item 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">2026</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Transformación Digital e Inteligencia Artificial</h4>
+                            <p class="text-sm text-slate-400 mb-3">Cursos Complementarios (IA y No-Code 140h, Ética y Resiliencia Digital 60h)</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Formación enfocada en la integración de automatizaciones de procesos mediante herramientas no-code, uso de grandes modelos de lenguaje (LLMs) aplicados a empresas, seguridad, sostenibilidad y comportamiento ético digital.
+                            </p>
+                        </div>
+
+                        <!-- Education Item 2 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">2016</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Máster en Monitorización de Ensayos Clínicos</h4>
+                            <p class="text-sm text-slate-400 mb-3">Universidad de Sevilla</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Capacitación en buenas prácticas clínicas (GCP), control y auditoría de datos científicos y regulaciones sanitarias europeas y nacionales.
+                            </p>
+                        </div>
+
+                        <!-- Education Item 3 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-900"></span>
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">2009</span>
+                            <h4 class="text-lg font-bold text-white mt-2">Licenciatura en Administración y Dirección de Empresas (ADE)</h4>
+                            <p class="text-sm text-slate-400 mb-3">Universidad Jaume I (Castellón)</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Formación integral en contabilidad financiera, dirección estratégica, derecho administrativo, análisis económico y organización de procesos institucionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN DE PORTAFOLIO (Proyectos) -->
+    <section id="proyectos" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl sm:text-4xl font-outfit font-bold tracking-tight text-white mb-4">Proyectos & Iniciativas</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-400">Demostraciones de soluciones prácticas y de optimización aplicadas a procesos administrativos, No-code e investigación clínica.</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                
+                <!-- Project Card 1 -->
+                <div class="card-premium rounded-2xl overflow-hidden flex flex-col h-full group">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent z-10"></div>
+                        <i data-lucide="settings" class="w-16 h-16 text-blue-500/30 group-hover:text-blue-400/50 transition-colors duration-300"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-3 flex-wrap">
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-medium">No-Code</span>
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-slate-700 text-slate-300 font-medium">Gestión Pública</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                            Gestión Automatizada de Contratos Públicos
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            Diseño conceptual de un panel automatizado para el seguimiento de contratos menores y licitaciones, enviando alertas de vencimiento y plazos legales para optimizar los procesos de contratación.
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition duration-200">Ver Detalles</a>
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-lg transition duration-200">Consultar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card-premium rounded-2xl overflow-hidden flex flex-col h-full group">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent z-10"></div>
+                        <i data-lucide="bar-chart-3" class="w-16 h-16 text-emerald-500/30 group-hover:text-emerald-400/50 transition-colors duration-300"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-3 flex-wrap">
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">SPSS</span>
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-slate-700 text-slate-300 font-medium">Salud / Datos</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors duration-300">
+                            Dashboard de Métricas Clínicas
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            Estructura de control analítico y base de datos con Excel avanzado y SPSS para la validación del protocolo, análisis de eventos adversos y generación de informes ejecutivos en estudios médicos observacionales.
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition duration-200">Ver Detalles</a>
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-lg transition duration-200">Consultar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card-premium rounded-2xl overflow-hidden flex flex-col h-full group">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent z-10"></div>
+                        <i data-lucide="shuffle" class="w-16 h-16 text-indigo-500/30 group-hover:text-indigo-400/50 transition-colors duration-300"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-3 flex-wrap">
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 font-medium">Simplificación</span>
+                            <span class="text-xs px-2.5 py-0.5 rounded bg-slate-700 text-slate-300 font-medium">Procesos</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                            Reingeniería de Justificación de Subvenciones
+                        </h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            Propuesta práctica para digitalizar la recogida de documentación en proyectos del tercer sector, optimizando los tiempos de revisión y reduciendo errores de validación de pliegos y nóminas en un 35%.
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition duration-200">Ver Detalles</a>
+                            <a href="#contacto" class="text-xs font-semibold px-4 py-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-lg transition duration-200">Consultar Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN DE CONTACTO -->
+    <section id="contacto" class="py-20 relative border-t border-slate-800">
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl sm:text-4xl font-outfit font-bold tracking-tight text-white mb-4">Contacto</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-400">¿Quieres conocer más sobre mi trayectoria o colaborar en proyectos de mejora organizativa y digitalización? ¡Hablemos!</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-slate-800/30 border border-slate-800 rounded-3xl p-8 sm:p-12 reveal">
+                <!-- Form Submission Status -->
+                <div id="form-status" class="mb-6 hidden"></div>
+
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Name input -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Nombre completo</label>
+                            <input type="text" id="name" name="name" required class="form-input-premium w-full px-4 py-3 rounded-xl text-base" placeholder="Introduce tu nombre">
+                        </div>
+                        <!-- Email input -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required class="form-input-premium w-full px-4 py-3 rounded-xl text-base" placeholder="tucorreo@ejemplo.com">
+                        </div>
+                    </div>
+
+                    <!-- Subject input -->
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Asunto</label>
+                        <input type="text" id="subject" name="subject" required class="form-input-premium w-full px-4 py-3 rounded-xl text-base" placeholder="¿En qué puedo ayudarte?">
+                    </div>
+
+                    <!-- Message input -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required class="form-input-premium w-full px-4 py-3 rounded-xl text-base resize-none" placeholder="Escribe aquí tu consulta..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" id="form-submit-btn" class="w-full flex items-center justify-center px-6 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl active:scale-98 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-200">
+                            Enviar Mensaje
+                            <i data-lucide="send" class="ml-2 w-4 h-4"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER (Pie de página) -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Branding inside footer -->
+            <div class="mb-6">
+                <a href="#inicio" class="text-lg font-outfit font-extrabold tracking-wider text-white hover:opacity-85 transition-opacity">
+                    LAURA SALAZAR MERCÉ
+                </a>
+                <p class="text-xs text-slate-500 mt-2">Castellón de la Plana, España</p>
+            </div>
+
+            <!-- Social Links Icons -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Laura Salazar" class="text-slate-400 hover:text-blue-500 transition duration-300 p-2 rounded-full bg-slate-900 border border-slate-800">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Laura Salazar" class="text-slate-400 hover:text-emerald-500 transition duration-300 p-2 rounded-full bg-slate-900 border border-slate-800">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <!-- Twitter/X -->
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Laura Salazar" class="text-slate-400 hover:text-indigo-400 transition duration-300 p-2 rounded-full bg-slate-900 border border-slate-800">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <!-- Copyright and ethics note -->
+            <div class="max-w-md mx-auto text-xs text-slate-500 space-y-2">
+                <p>&copy; 2026 Laura Salazar Mercé. Todos los derechos reservados.</p>
+                <p class="italic text-[10px]">Diseñado con rigor ético, accesibilidad web y mejora continua.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
